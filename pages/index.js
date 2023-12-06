@@ -6,6 +6,11 @@ import CircleBar from "../src/Circle_bar"
 import { useRouter } from "next/router"
 import Project_Box from "../src/units/Project_Box"
 export default function PortFolio(){
+  const baro01 = () => {
+  console.log("baro01 함수 호출됨");
+  // 이하 코드 생략
+};
+
   const scrollToSection = (sectionId) =>{
     const element = document.getElementById(sectionId);
     if(element){
@@ -16,7 +21,8 @@ export default function PortFolio(){
   const router = useRouter()
   function onclickMove1(){
     router.push("/index.js")
-  }
+  };
+
 
   return(
     <Wrapper>
@@ -48,8 +54,8 @@ export default function PortFolio(){
       </Skill>
       <Project id="Section03">
         <Name names="Project"></Name>
-        <Project_Box onClick={onclickMove1}Project_Name="포트폴리오 웹사이트" Date="2022.08 (1人 개인 프로젝트)" Site="포트폴리오 메인 페이지로 제작한 웹사이트 입니다. 현재 보고 계신 웹사이트로 React로 개발을 완료하였습니다." fun="소개, 역량, 프로젝트, 연락처" time="1 ~ 2 주" src1="dds.jpeg" name="main" git="https://github.com/JAEHWAN-J123/PortFolio-main_page.git"></Project_Box>
-        <Project_Box Project_Name="국립중앙박물관" Date="2022.05 (1人 개인 프로젝트)" Site="당시 학원수업을 들으면서 처음 만들어본 포트폴리오 용도 웹 사이트입니다. 퍼블리싱으로 만들었으며, 사이트를 재구성 하는 방향으로 제작하였습니다."fun="박물관 소개, 관람정보, 전시, 소식 참여" time="2 달" name="museum" git="https://github.com/JAEHWAN-J123/Portfolio-museum.git" ></Project_Box>
+        <Project_Box Project_Name="포트폴리오 웹사이트" Date="2022.08 (1人 개인 프로젝트)" Site="포트폴리오 메인 페이지로 제작한 웹사이트 입니다. 현재 보고 계신 웹사이트로 React로 개발을 완료하였습니다." fun="소개, 역량, 프로젝트, 연락처" time="1 ~ 2 주" src1="dds.jpeg" name="main" git="https://github.com/JAEHWAN-J123/mainpage.git"></Project_Box>
+        <Project_Box url="http://jaehwan0218.dothome.co.kr" Project_Name="국립중앙박물관" Date="2022.05 (1人 개인 프로젝트)" Site="당시 학원수업을 들으면서 처음 만들어본 포트폴리오 용도 웹 사이트입니다. 퍼블리싱으로 만들었으며, 사이트를 재구성 하는 방향으로 제작하였습니다."fun="박물관 소개, 관람정보, 전시, 소식 참여" time="2 달" name="museum" git="https://github.com/JAEHWAN-J123/Portfolio-museum.git" ></Project_Box>
       </Project>
       <Contact className="Section04">
         <Name names="Contact"></Name>

@@ -1,6 +1,7 @@
 
 
 export default function Project_Box(props){
+ const siteUrl = props.url;
  const name = props.name;
  const github = props.git;
  const imgUrl = "/images/"+name+".png"
@@ -24,13 +25,22 @@ export default function Project_Box(props){
     ,"border":"none"
   }
 
+
   const box_style={
     "padding":"10px",
     "fontSize":"0.9rem",
     "boxShadow":"1px 1px 1px;"
   }
+
+  const handleClick = () => {
+    if (siteUrl) {
+      window.open(siteUrl, "_blank");
+    }
+  };
+
+
   return(
-    <div className="Site_wrap">
+    <div onClick={handleClick} className="Site_wrap">
       <div className="Site_top">
        <h4>{props.Project_Name}</h4>
       <i>{props.Date}</i>
