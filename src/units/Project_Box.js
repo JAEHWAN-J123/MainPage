@@ -40,14 +40,14 @@ export default function Project_Box(props){
 
 
   return(
-    <div onClick={handleClick} className="Site_wrap">
+    <div className="Site_wrap">
       <div className="Site_top">
        <h4>{props.Project_Name}</h4>
       <i>{props.Date}</i>
       </div>
       <div className="Site_flexWrap">
         <div className="Site_img">
-        <img style={img_style} src={imgUrl} alt={name} title={name}/>
+        <img onClick={handleClick}style={img_style} src={imgUrl} alt={name} title={name}/>
         </div>
         <div style={box_style} className="Site_introduce">
           <p style={P_style}>{props.Site}</p>
