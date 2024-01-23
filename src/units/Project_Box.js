@@ -11,7 +11,7 @@ export default function Project_Box(props){
    "border-radius":"3%"
  }
   const P_style={
-    "width":"340px",
+    "width":"450px",
     "lineHeight":"23px",
     "marginTop":"0px",
     "whiteSpace":"wrap",
