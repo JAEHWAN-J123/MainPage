@@ -85,7 +85,7 @@ background-color:#F2F5F8;
 
 export const Project = styled.div`
 width:100%;
-height:1850px;
+height:2650px;
 padding:60px 310px 139px 310px;
 background-color:#CCE0F7;
 `
